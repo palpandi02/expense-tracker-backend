@@ -1,3 +1,4 @@
+const PORT = process.env.PORT || 3000;
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -82,5 +83,5 @@ app.delete("/api/expenses/:id", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+    console.log(Server is running on port ${PORT});
 });
